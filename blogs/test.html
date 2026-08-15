@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why I wanted to learn Rust - Atix</title>
+    <title>Who am i? - Atix</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -81,31 +81,19 @@
             
             <div class="bento-card">
                 <header class="mb-10 pb-8 border-b border-gruvbox-bg1">
-                    <h1 class="font-display text-4xl md:text-5xl font-bold mb-4 text-gruvbox-fg leading-tight">Why I wanted to learn Rust</h1>
+                    <h1 class="font-display text-4xl md:text-5xl font-bold mb-4 text-gruvbox-fg leading-tight">Who am i?</h1>
                     <div class="flex items-center gap-4 text-sm text-gruvbox-fg2">
-                        <span><i class="far fa-calendar mr-2"></i>July 14, 2025</span>
+                        <span><i class="far fa-calendar mr-2"></i>August 14, 2026</span>
                         <span class="px-2 py-1 bg-gruvbox-bg1 rounded-full text-xs font-semibold">1 min read</span>
                     </div>
                 </header>
                 
                 <div class="prose max-w-none">
-                    <p>Rust is one of those languages that you hear about everywhere, but until you sit down and wrestle with the borrow checker, you don't really understand <em>why</em> people love it.</p>
-<p>I started using it to build a CLI tool for parsing JSON. What surprised me most wasn't the performance (which was excellent, as expected), but the confidence I had once the code finally compiled. The compiler isn't just catching syntax errors; it's enforcing a rigorous discipline around memory ownership that eliminates entire classes of runtime bugs. </p>
-<h2>The Borrow Checker is a Teacher</h2>
-<p>At first, fighting the borrow checker feels restrictive. You can't just pass references around willy-nilly. But eventually, you realize it's forcing you to design your data structures and data flow properly.</p>
-<p>Here is a quick example of a simple function:</p>
-<pre><code class="language-rust">fn main() {
-    let message = String::from(&quot;Hello, World!&quot;);
-    print_message(&amp;message);
-    println!(&quot;Still own the message: {}&quot;, message);
-}
-
-fn print_message(msg: &amp;String) {
-    println!(&quot;{}&quot;, msg);
-}
-</code></pre>
-<p>By passing a reference <code>&amp;message</code>, we don't transfer ownership. </p>
-<p>Overall, Rust is shaping up to be an incredible tool in my arsenal.</p>
+                    <p>I'm Atiksh Sharma, a 9th grader who likes building and tinkering with software and hardware. I like building compilers, operating systems, and tools that make programming more fun. I also really like cats.</p>
+<p>My hobbies include cooking, chess, table tennis, badminton, football, basketball, gaming, reading, programming, and nature photography.</p>
+<p>I started programming back in 2020 when I was 8 years old, starting with a chapter on <strong>MSW Logo</strong> in my computer book. This chapter taught me about loops and how commands are given to a computer. I still remember typing <code>forward 100</code>, then <code>left</code>, <code>right</code>, and <code>backward 100</code>, looping them to create cool shapes and stuff. That's how my journey began.</p>
+<p>Later, I learned Python, followed by Scratch from my CS book in 4th grade. I kept on learning other languages and finally got into low-level programming in 2023 when I began learning C/C++ and Go. After that, I learned Rust. It took me a <em>full year</em> to learn Rust—I started in 2024, and it all made sense by 2025. I even built a cool experimental operating system, <strong>RadianOS</strong>, with it! </p>
+<p>Since Rust was very complicated, I had this dream of making my own programming language. However, it had to be something innovative, so I put it on hold because I had nothing specific in mind at the time. In 2025, I found a gap in the satellite fault diagnosis field, which led to my next big research project.</p>
                 </div>
             </div>
         </div>

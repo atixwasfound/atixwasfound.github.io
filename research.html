@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Atix</title>
+    <title>Research - Atix</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -55,9 +55,9 @@
                 href="about.html">About</a>
             <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg1 hover:text-gruvbox-orange"
                 href="index.html#projects">Projects</a>
-            <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg1 hover:text-gruvbox-orange"
-                href="research.html">Research</a>
             <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg hover:text-gruvbox-orange"
+                href="research.html">Research</a>
+            <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg1 hover:text-gruvbox-orange"
                 href="blog.html">Blog</a>
         
             <div class="h-4 w-px bg-gruvbox-bg2"></div>
@@ -76,55 +76,75 @@
         <div
             class="absolute top-0 right-0 w-64 h-64 bg-gruvbox-orange/10 rounded-full blur-3xl -mr-20 -mt-20 transition-all duration-500 hover:bg-gruvbox-orange/20">
         </div>
-        <div class="max-w-5xl mx-auto relative z-10">
-            <div class="text-center mb-12" data-aos="fade-up">
-                <h1 class="font-display text-4xl font-bold mb-4 text-gruvbox-fg">Writings & Thoughts</h1>
-                <p class="text-gruvbox-fg2">Ramblings about code, systems, and life.</p>
+        <div class="max-w-5xl mx-auto relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div data-aos="fade-up" class="bento-card md:col-span-3">
+                <h1 class="font-display text-4xl font-bold mb-4 text-gruvbox-fg">Research Overview</h1>
+                <p class="text-gruvbox-fg1 leading-relaxed text-lg">
+                    My research spans the intersection of programming language theory, systems engineering, and applied
+                    AI. I'm interested in how programs are structured, how memory is managed, how distributed systems
+                    are specified, and how AI can work reliably in resource-constrained environments.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="100">
-                <!-- BLOG_CARDS_START -->
-
-            <a href="/blogs/test.html" class="bento-card group">
-                <div class="flex flex-col h-full justify-between">
-                    <div>
-                        <h2 class="font-display text-2xl font-bold mb-3 text-gruvbox-fg group-hover:text-gruvbox-orange transition-colors">Who am i?</h2>
-                        <p class="text-gruvbox-fg2 mb-6 leading-relaxed">Introductory Blog</p>
-                    </div>
-                    <div class="flex items-center justify-between mt-4">
-                        <span class="text-sm font-medium text-gruvbox-fg3">August 14, 2026</span>
-                        <i class="fas fa-arrow-right text-gruvbox-fg3 group-hover:text-gruvbox-orange transition-colors"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blogs/example.html" class="bento-card group">
-                <div class="flex flex-col h-full justify-between">
-                    <div>
-                        <h2 class="font-display text-2xl font-bold mb-3 text-gruvbox-fg group-hover:text-gruvbox-orange transition-colors">example?</h2>
-                        <p class="text-gruvbox-fg2 mb-6 leading-relaxed">coming soon i guess?</p>
-                    </div>
-                    <div class="flex items-center justify-between mt-4">
-                        <span class="text-sm font-medium text-gruvbox-fg3">July 14, 2025</span>
-                        <i class="fas fa-arrow-right text-gruvbox-fg3 group-hover:text-gruvbox-orange transition-colors"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blogs/rust-blog.html" class="bento-card group">
-                <div class="flex flex-col h-full justify-between">
-                    <div>
-                        <h2 class="font-display text-2xl font-bold mb-3 text-gruvbox-fg group-hover:text-gruvbox-orange transition-colors">Why I wanted to learn Rust</h2>
-                        <p class="text-gruvbox-fg2 mb-6 leading-relaxed">A quick dive into how Rust made me rethink systems programming and memory safety...</p>
-                    </div>
-                    <div class="flex items-center justify-between mt-4">
-                        <span class="text-sm font-medium text-gruvbox-fg3">July 14, 2025</span>
-                        <i class="fas fa-arrow-right text-gruvbox-fg3 group-hover:text-gruvbox-orange transition-colors"></i>
-                    </div>
-                </div>
-            </a>
-            <!-- BLOG_CARDS_END -->
+            <div data-aos="fade-up" data-aos-delay="100" class="bento-card md:col-span-2">
+                <h2 class="font-display text-2xl font-bold mb-6 text-gruvbox-fg">Current Topics</h2>
+                <ul class="space-y-4 text-gruvbox-fg1">
+                    <li><strong class="text-gruvbox-orange font-display text-xl">Choreographic Programming with Perceus
+                            Memory Model</strong><br>
+                        Exploring ownership-based memory semantics in distributed, message-passing systems expressed as
+                        choreographies.</li>
+                    <li><strong class="text-gruvbox-orange font-display text-xl">Metaprogramming in Choreographic
+                            Programming</strong><br>
+                        Compile-time protocol generation, verification, and transformation within choreographic
+                        languages.</li>
+                    <li><strong class="text-gruvbox-orange font-display text-xl">Wyzer: LMVS Memory Model</strong><br>
+                        Linear-Mutable-Value-Semantics memory model for the Wyzer language, targeting GC-free,
+                        predictable systems-level performance.</li>
+                </ul>
             </div>
+
+            <div data-aos="fade-up" data-aos-delay="200" class="bento-card md:col-span-1 flex flex-col justify-center">
+                <h2 class="font-display text-2xl font-bold mb-6 text-gruvbox-fg">Applied AI & Systems</h2>
+                <ul class="space-y-4 text-gruvbox-fg1">
+                    <li><strong class="text-gruvbox-orange font-display text-lg">Aethelix</strong><br>
+                        Probabilistic root-cause isolation in satellite telemetry streams.</li>
+                    <li><strong class="text-gruvbox-orange font-display text-lg">Anveshak</strong><br>
+                        Offline artifact recognition and RAG for archaeology.</li>
+                    <li><strong class="text-gruvbox-orange font-display text-lg">Agribot</strong><br>
+                        Edge AI vision models + quantized LLM for crop disease diagnosis.</li>
+                </ul>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="bento-card md:col-span-3">
+                <h2 class="font-display text-2xl font-bold mb-6 text-gruvbox-fg">Publications</h2>
+
+                <div
+                    class="border border-gruvbox-bg1 bg-gruvbox-bg0_h rounded-[24px] p-6 sm:p-8 transition-colors hover:border-gruvbox-bg2">
+                    <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+                        <div class="flex-grow">
+                            <h3 class="font-display text-xl sm:text-2xl font-bold text-gruvbox-fg mb-3 leading-snug">
+                                Aethelix: A Physics-Based Causal Inference Framework for Real-Time Satellite Fault
+                                Detection
+                            </h3>
+                            <div class="flex items-center gap-3 text-gruvbox-fg2 text-sm mb-4">
+                                <span class="font-medium text-gruvbox-fg1">Atiksh Sharma</span>
+                                <span>&bull;</span>
+                                <span>Zenodo (2026)</span>
+                            </div>
+                            <p class="text-gruvbox-fg1 text-base leading-relaxed">
+                                An open-source framework that encodes satellite subsystem failure mechanisms into a
+                                causal graph for rapid probabilistic fault isolation.
+                            </p>
+                        </div>
+                        <a href="https://doi.org/10.5281/zenodo.19538163" target="_blank"
+                            class="shrink-0 px-6 py-3 bg-gruvbox-bg1 hover:bg-gruvbox-bg2 border border-gruvbox-bg2 text-gruvbox-fg font-medium rounded-full transition-colors flex items-center justify-center gap-2">
+                            <i class="fas fa-external-link-alt"></i> DOI Link
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Atix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gruvbox: {
+                            bg0_h: '#1d2021', bg0: '#282828', bg1: '#3c3836', bg2: '#504945', bg3: '#665c54',
+                            fg: '#ebdbb2', fg1: '#d5c4a1', fg2: '#bdae93', fg3: '#a89984',
+                            orange: '#d65d0e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        body { background-color: #1d2021; color: #ebdbb2; }
+        .bento-card {
+            @apply bg-gruvbox-bg0 border border-gruvbox-bg1 rounded-[32px] p-8 transition-all duration-300 hover:border-gruvbox-bg2 hover:-translate-y-1 block;
+        }
+        .is-patting .arch-logo {
+            opacity: 0 !important;
+        }
+        .is-patting .nyarch-logo {
+            opacity: 1 !important;
+            transform: scaleY(0.9) scaleX(1.05) translateY(10px);
+        }
+        .is-patting .pat-hand {
+            opacity: 1 !important;
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-gruvbox-orange selection:text-gruvbox-bg0_h overflow-x-hidden">
+
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-gruvbox-bg0/80 backdrop-blur-md border border-gruvbox-bg1 rounded-full h-14 flex items-center shadow-lg">
+        <div class="px-8 flex gap-8 items-center justify-center w-full">
+            <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg1 hover:text-gruvbox-orange" href="index.html">Home</a>
+            <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg hover:text-gruvbox-orange" href="about.html">About</a>
+            <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg1 hover:text-gruvbox-orange" href="index.html#projects">Projects</a>
+            <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg1 hover:text-gruvbox-orange" href="research.html">Research</a>
+            <a class="text-sm font-medium tracking-wide duration-200 text-gruvbox-fg1 hover:text-gruvbox-orange" href="blog.html">Blog</a>
+
+            <div class="h-4 w-px bg-gruvbox-bg2"></div>
+            <div class="flex gap-4 items-center">
+                <a href="https://github.com/atixwasfound" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors text-lg" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://discordapp.com/users/956518575131222017" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors text-lg" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="https://instagram.com/atixwasfound" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors text-lg" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/@rudywasfound" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors text-lg" title="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com/in/atiksh-sharma-007a8823a" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors text-lg" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-12 px-6 relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-gruvbox-orange/10 rounded-full blur-3xl -mr-20 -mt-20 transition-all duration-500 hover:bg-gruvbox-orange/20"></div>
+        <div class="max-w-5xl mx-auto relative z-10">
+            
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h1 class="font-display text-4xl font-bold mb-4 text-gruvbox-fg">About Me</h1>
+                <p class="text-gruvbox-fg2">The story so far.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div data-aos="fade-up" class="bento-card md:col-span-2">
+                    <h2 class="font-display text-3xl font-bold mb-4 text-gruvbox-fg">Hi, I'm Atix.</h2>
+                    <p class="text-gruvbox-fg1 leading-relaxed mb-4 text-lg">
+                        I'm Atiksh Sharma, a 9th grader from India who loves building and tinkering with software and hardware. I am deeply passionate about systems programming, low-level engineering, and exploring how things work under the hood.
+                    </p>
+                    <p class="text-gruvbox-fg1 leading-relaxed text-lg">
+                        I like building compilers, experimental operating systems (like RadianOS), and tools that make programming more fun. I believe in learning by building, whether it's causality engines for satellites or offline AI rovers. Also, I really like cats.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100" class="bento-card md:col-span-1 flex flex-col justify-center">
+                    <h2 class="font-display text-2xl font-bold mb-6 text-gruvbox-fg">Interests & Hobbies</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Cooking</span>
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Chess</span>
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Table Tennis</span>
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Badminton</span>
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Football</span>
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Basketball</span>
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Gaming</span>
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Reading</span>
+                        <span class="px-3 py-1.5 bg-gruvbox-bg1 border border-gruvbox-bg2 text-gruvbox-fg2 rounded-lg text-sm font-medium">Nature Photography</span>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" class="bento-card md:col-span-2 flex flex-col justify-center">
+                    <div class="flex items-center gap-3 mb-6">
+                        <h2 class="font-display text-2xl font-bold text-gruvbox-fg">Current Obsessions</h2>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-5 rounded-2xl bg-gruvbox-bg0_h border border-gruvbox-bg1 hover:border-gruvbox-bg2 transition-colors">
+                            <h3 class="font-bold text-gruvbox-fg mb-1">Memory Models</h3>
+                            <p class="text-sm text-gruvbox-fg2 leading-relaxed">Trying to figure out how computers remember things. Mostly fighting the borrow checker so it stops yelling at me.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-gruvbox-bg0_h border border-gruvbox-bg1 hover:border-gruvbox-bg2 transition-colors">
+                            <h3 class="font-bold text-gruvbox-fg mb-1">OS Development</h3>
+                            <p class="text-sm text-gruvbox-fg2 leading-relaxed">Writing my own OS (RadianOS) from scratch because I hate myself. Bootloaders and bare-metal Rust are my current playground.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-gruvbox-bg0_h border border-gruvbox-bg1 hover:border-gruvbox-bg2 transition-colors">
+                            <h3 class="font-bold text-gruvbox-fg mb-1">Compiler Design</h3>
+                            <p class="text-sm text-gruvbox-fg2 leading-relaxed">Making Wyzer, my own programming language, because why not? Learning how to build lexers without losing my mind.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-gruvbox-bg0_h border border-gruvbox-bg1 hover:border-gruvbox-bg2 transition-colors">
+                            <h3 class="font-bold text-gruvbox-fg mb-1">Research</h3>
+                            <p class="text-sm text-gruvbox-fg2 leading-relaxed">Reading long academic papers so I don't have to touch grass. Trying to find cool ideas for systems engineering.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-gruvbox-bg0_h border border-gruvbox-bg1 hover:border-gruvbox-bg2 transition-colors">
+                            <h3 class="font-bold text-gruvbox-fg mb-1">Cooking</h3>
+                            <p class="text-sm text-gruvbox-fg2 leading-relaxed">Throwing things in a pan and hoping they taste good. Finding the perfect spice ratio is basically like optimizing code.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-gruvbox-bg0_h border border-gruvbox-bg1 hover:border-gruvbox-bg2 transition-colors">
+                            <h3 class="font-bold text-gruvbox-fg mb-1">Gaming</h3>
+                            <p class="text-sm text-gruvbox-fg2 leading-relaxed">Rage-quitting after getting styled on in competitive multiplayer. A good break from staring at terminal errors.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-gruvbox-bg0_h border border-gruvbox-bg1 hover:border-gruvbox-bg2 transition-colors sm:col-span-2">
+                            <h3 class="font-bold text-gruvbox-fg mb-1">Nature Photography</h3>
+                            <p class="text-sm text-gruvbox-fg2 leading-relaxed">Taking pictures of trees and stuff so I remember what the outside world looks like.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300" class="bento-card md:col-span-1 relative overflow-hidden group flex flex-col justify-start">
+
+                    <div id="arch-mascot" class="absolute -right-8 -bottom-8 opacity-[0.03] group-hover:opacity-10 hover:!opacity-30 cursor-pointer group-hover:scale-110 transition-all duration-700 w-64 h-64 text-gruvbox-fg z-0 flex items-center justify-center" onclick="patArchLogo()">
+                        
+                        <svg class="arch-logo w-full h-full transition-opacity duration-300" role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.39.605C10.376 3.092 9.764 4.72 8.635 7.132c.693.734 1.543 1.589 2.923 2.554-1.484-.61-2.496-1.224-3.252-1.86C6.86 10.842 4.596 15.138 0 23.395c3.612-2.085 6.412-3.37 9.021-3.862a6.61 6.61 0 01-.171-1.547l.003-.115c.058-2.315 1.261-4.095 2.687-3.973 1.426.12 2.534 2.096 2.478 4.409a6.52 6.52 0 01-.146 1.243c2.58.505 5.352 1.787 8.914 3.844-.702-1.293-1.33-2.459-1.929-3.57-.943-.73-1.926-1.682-3.933-2.713 1.38.359 2.367.772 3.137 1.234-6.09-11.334-6.582-12.84-8.67-17.74zM22.898 21.36v-.623h-.234v-.084h.562v.084h-.234v.623h.331v-.707h.142l.167.5.034.107a2.26 2.26 0 01.038-.114l.17-.493H24v.707h-.091v-.593l-.206.593h-.084l-.205-.602v.602h-.091"/>
+                        </svg>
+
+                        <img src="https://nyarchlinux.moe/icon.png" alt="Nyarch Linux Logo" class="nyarch-logo absolute inset-0 w-[90%] h-[90%] m-auto opacity-0 transition-all duration-300 pointer-events-none drop-shadow-lg">
+
+                        <img src="pat-hand-transparent.gif" alt="Patting Hand" class="pat-hand absolute -top-4 right-12 w-32 h-32 opacity-0 pointer-events-none z-20">
+                    </div>
+                    <h2 class="font-display text-2xl font-bold mb-6 text-gruvbox-fg relative z-10">The Setup</h2>
+                    <ul class="space-y-4 relative z-10">
+                        <li class="flex items-center gap-3 text-gruvbox-fg1">
+                            <div class="w-8 h-8 rounded-full bg-gruvbox-bg1 flex items-center justify-center text-gruvbox-orange"><i class="fas fa-desktop text-sm"></i></div>
+                            <span class="font-medium">Arch Linux <span class="text-gruvbox-fg3 text-xs">(btw)</span></span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gruvbox-fg1">
+                            <div class="w-8 h-8 rounded-full bg-gruvbox-bg1 flex items-center justify-center text-gruvbox-orange"><i class="fas fa-edit text-sm"></i></div>
+                            <span class="font-medium">Neovim</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gruvbox-fg1">
+                            <div class="w-8 h-8 rounded-full bg-gruvbox-bg1 flex items-center justify-center text-gruvbox-orange"><i class="fas fa-terminal text-sm"></i></div>
+                            <span class="font-medium">Bash / Tmux</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gruvbox-fg1">
+                            <div class="w-8 h-8 rounded-full bg-gruvbox-bg1 flex items-center justify-center text-gruvbox-orange"><i class="fas fa-palette text-sm"></i></div>
+                            <span class="font-medium">Gruvbox Theme</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gruvbox-fg1">
+                            <div class="w-8 h-8 rounded-full bg-gruvbox-bg1 flex items-center justify-center text-gruvbox-orange"><i class="fas fa-mug-hot text-sm"></i></div>
+                            <span class="font-medium">Black Coffee</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="400" class="bento-card md:col-span-3 flex flex-col justify-center">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-code-commit text-gruvbox-orange text-xl"></i>
+                        <h2 class="font-display text-2xl font-bold text-gruvbox-fg">Open Source Contributions</h2>
+                    </div>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 relative z-10 text-gruvbox-fg1 leading-relaxed">
+                        <li class="flex gap-3"><span class="text-gruvbox-orange opacity-70">▹</span> <span><strong class="text-gruvbox-fg">Arch Linux:</strong> Core pacman bug fixes and improvements.</span></li>
+                        <li class="flex gap-3"><span class="text-gruvbox-orange opacity-70">▹</span> <span><strong class="text-gruvbox-fg">NixOS:</strong> Contributions to documentation.</span></li>
+                        <li class="flex gap-3"><span class="text-gruvbox-orange opacity-70">▹</span> <span><strong class="text-gruvbox-fg">GitHub Linguist:</strong> Added syntax support for the C3 programming language.</span></li>
+                        <li class="flex gap-3"><span class="text-gruvbox-orange opacity-70">▹</span> <span><strong class="text-gruvbox-fg">C3 Language:</strong> Added GitHub support and integration.</span></li>
+                        <li class="flex gap-3"><span class="text-gruvbox-orange opacity-70">▹</span> <span><strong class="text-gruvbox-fg">AxOS:</strong> Contributions to the Sleex Desktop environment.</span></li>
+                        <li class="flex gap-3"><span class="text-gruvbox-orange opacity-70">▹</span> <span><strong class="text-gruvbox-fg">Rhino Linux:</strong> Icons and Grub bootloader theme styling.</span></li>
+                        <li class="flex gap-3"><span class="text-gruvbox-orange opacity-70">▹</span> <span><strong class="text-gruvbox-fg">T/2 SDE Linux:</strong> Package maintenance and contributions.</span></li>
+                        <li class="flex gap-3"><span class="text-gruvbox-orange opacity-70">▹</span> <span><strong class="text-gruvbox-fg">EndeavourOS:</strong> Community Edition Hyprland Dotfiles.</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gruvbox-bg1 mt-12">
+        <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center gap-2 text-gruvbox-fg mb-4 md:mb-0">
+                <i class="fas fa-terminal"></i>
+                <span class="font-display font-bold">Atix / Atiksh Sharma</span>
+            </div>
+            <p class="text-sm text-gruvbox-fg2">© 2025-2026 Atix — All rights reserved</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="https://github.com/atixwasfound" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors"><i class="fab fa-github text-lg"></i></a>
+                <a href="https://discordapp.com/users/956518575131222017" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors"><i class="fab fa-discord text-lg"></i></a>
+                <a href="https://instagram.com/atixwasfound" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                <a href="https://x.com/@rudywasfound" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors"><i class="fab fa-twitter text-lg"></i></a>
+                <a href="https://linkedin.com/in/atiksh-sharma-007a8823a" target="_blank" class="text-gruvbox-fg2 hover:text-gruvbox-orange transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 600,
+            easing: 'ease-out-cubic',
+        });
+
+        const patSounds = [
+            new Audio('pat.ogg'),
+            new Audio('pat1.ogg'),
+            new Audio('pat2.ogg')
+        ];
+
+        function playPatSound() {
+            let patsToPlay = 4;
+            let currentPat = 0;
+            
+            function playNextPat() {
+                if (currentPat >= patsToPlay) return;
+                
+                let sound = patSounds[Math.floor(Math.random() * patSounds.length)];
+                let clonedSound = sound.cloneNode();
+                clonedSound.volume = 0.8;
+                clonedSound.play().catch(e => console.log('Audio play failed:', e));
+                
+                currentPat++;
+                setTimeout(playNextPat, 220); 
+            }
+            
+            playNextPat();
+        }
+
+        let isPatting = false;
+        function patArchLogo() {
+            if (isPatting) return;
+            isPatting = true;
+            
+            playPatSound();
+            
+            const mascot = document.getElementById('arch-mascot');
+            mascot.classList.add('is-patting');
+            
+            setTimeout(() => {
+                mascot.classList.remove('is-patting');
+                isPatting = false;
+            }, 880);
+        }
+    </script>
+</body>
+</html>
